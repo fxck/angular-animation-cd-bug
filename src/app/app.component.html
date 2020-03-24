@@ -1,0 +1,7 @@
+<div
+  *ngIf="visible$ | async"
+  style="position: relative;">
+  <div [@outerRouteAnimation]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>
